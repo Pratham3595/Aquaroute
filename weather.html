@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>🌎 Weather Forecast</h2>
+        
+        <input type="text" id="location" placeholder="Enter City Name (or leave empty)">
+        <input type="text" id="lat" placeholder="Enter Latitude (optional)">
+        <input type="text" id="lon" placeholder="Enter Longitude (optional)">
+        
+        <button onclick="getWeather()">🔍 Get Weather</button>
+        <button onclick="getCurrentLocation()">📍 Use My Location</button>
+
+        <div id="weather">
+            <img id="weather-icon" src="" alt="" style="display:none; width: 80px;">
+            <p id="weather-info"></p>
+        </div>
+
+        <div id="alerts">
+            <h3>⚠️ Weather Alerts</h3>
+            <p id="weather-alert"></p>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>

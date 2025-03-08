@@ -1,0 +1,63 @@
+/* Background: Light blue & white gradient like sky */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #a8dadc, #f1faee);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Glassmorphism effect for the container */
+.container {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    color: #023047;
+}
+
+/* Stylish input fields */
+input {
+    padding: 10px;
+    margin: 5px;
+    width: 90%;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.6);
+    color: black;
+}
+
+/* Beautiful animated button */
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #005f86;
+    transform: scale(1.05);
+}
+
+/* Weather display card */
+#weather, #alerts {
+    margin-top: 20px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+    color: black;
+}
